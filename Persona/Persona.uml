@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bw1EYLUAEeuW75Ua9jNEUA" name="Persona">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_cBIKMLUAEeuW75Ua9jNEUA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_lS20QLUAEeuW75Ua9jNEUA" name="clases.ito.poo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_o1vsMLUAEeuW75Ua9jNEUA" name="Persona">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rVj9kLUAEeuW75Ua9jNEUA" name="nombre" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5MFogLUAEeuW75Ua9jNEUA" name="apellido" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-ohcALUAEeuW75Ua9jNEUA" name="email" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CVn_4LUBEeuW75Ua9jNEUA" name="celular" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HhYTELUBEeuW75Ua9jNEUA" name="Cliente">
+      <generalization xmi:type="uml:Generalization" xmi:id="_iQpyELUBEeuW75Ua9jNEUA" general="_o1vsMLUAEeuW75Ua9jNEUA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JqoekLUBEeuW75Ua9jNEUA" name="noCliente" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_NpikILUBEeuW75Ua9jNEUA" name="creditoDisponible" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kp3FILUBEeuW75Ua9jNEUA" name="Empleado">
+      <generalization xmi:type="uml:Generalization" xmi:id="_PO6xELUCEeuW75Ua9jNEUA" general="_o1vsMLUAEeuW75Ua9jNEUA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_orjY8LUBEeuW75Ua9jNEUA" name="nss" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_s6VGgLUBEeuW75Ua9jNEUA" name="noEmpleado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wPu8ELUBEeuW75Ua9jNEUA" name="sueldo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1gsfYLUBEeuW75Ua9jNEUA" name="puesto" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5_K10LUBEeuW75Ua9jNEUA" name="cambioPuesto">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Fj4PILUCEeuW75Ua9jNEUA" name="puesto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_KqN20LUCEeuW75Ua9jNEUA" name="sueldo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q2hBALUCEeuW75Ua9jNEUA" name="Administrativo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_h16hYLUCEeuW75Ua9jNEUA" general="_kp3FILUBEeuW75Ua9jNEUA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_SdK1wLUCEeuW75Ua9jNEUA" name="depto" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_WpjWoLUCEeuW75Ua9jNEUA" name="cambiaDepto">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_gONjwLUCEeuW75Ua9jNEUA" name="newDepto">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i5Q0wLUCEeuW75Ua9jNEUA" name="Chofer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Cv9gkLUDEeuW75Ua9jNEUA" general="_kp3FILUBEeuW75Ua9jNEUA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_kZUSQLUCEeuW75Ua9jNEUA" name="rutas" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uLdhwLUCEeuW75Ua9jNEUA" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_oGbdMLUCEeuW75Ua9jNEUA" name="noAutobus" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_xZLa8LUCEeuW75Ua9jNEUA" name="agregarRuta">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_3hrqQLUCEeuW75Ua9jNEUA" name="ruta">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_5daXILUCEeuW75Ua9jNEUA" name="eliminarRuta">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-lXIYLUCEeuW75Ua9jNEUA" name="ruta">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_A2h5wLUDEeuW75Ua9jNEUA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
